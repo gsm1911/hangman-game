@@ -39,7 +39,6 @@ def choose_word(wordlist):
 # so that it can be accessed from anywhere in the program
 wordlist = load_words()
 
-
 def is_word_guessed(secret_word, letters_guessed):
     '''
     secret_word: string, the word the user is guessing; assumes all letters are
@@ -58,8 +57,6 @@ def is_word_guessed(secret_word, letters_guessed):
                 continue
     
     return guess == secret_word
-
-
 
 def get_guessed_word(secret_word, letters_guessed):
     '''
@@ -98,8 +95,6 @@ def get_available_letters(letters_guessed):
     
     return available_letters
     
-    
-
 def hangman(secret_word):
     guesses_remaining = 6
     letters_guessed = []
